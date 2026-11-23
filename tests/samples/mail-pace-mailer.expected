@@ -44,6 +44,6 @@ class TransportProvider
 	public function isSmtp(TransportInterface $transport): bool
 	{
 		return $transport instanceof MailPaceSmtpTransport
-			|| $transport::class === \Symfony\Component\Mailer\Bridge\MailPace\Transport\MailPaceApiTransport::class;
+			|| $transport::class === \Symfony\Component\Mailer\Bridge\OhMySmtp\Transport\OhMySmtpApiTransport::class;
 	}
 }
